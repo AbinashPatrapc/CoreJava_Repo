@@ -12,6 +12,7 @@ public class PrimeNumber {
 			if(n%i==0) {
 				c++;
 			}
+			System.out.println(c);
 		}
 		if(c==2) 
 			System.out.println("Prime Number");

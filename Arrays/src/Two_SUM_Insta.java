@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Two_SUM_Insta {
 
 	public static void main(String[] args) {
@@ -14,23 +11,17 @@ public class Two_SUM_Insta {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] + arr[j] == target) {
-					System.out.println(i + " " + j);
+					System.out.println(arr[i] + " " + arr[j]);
 				}
 			}
 		}
 	}
-	
-	
 	public static void twosum2(int arr[],int  target) {
-		Map<Integer,Integer> map=new HashMap();
-		
-		for(int i=0;i<arr.length;i++) {
-			int comp=target-arr[i];
-		if(map.containsKey(comp)) {
-			System.out.println(i+" "+comp);
-		}
-			
-			map.put(arr[i], i);
+		for(int i:arr) {
+			for(int j:arr) {
+				if(i+j==target)
+					System.out.println(i+" "+j);
+			}
 		}
 	}
 

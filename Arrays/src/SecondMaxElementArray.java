@@ -2,7 +2,7 @@
 //sorting the array
 public class SecondMaxElementArray {
 	public static void main(String[] args) {
-         int arr[]= {19,4,7,24,29,2,6,18};
+         int arr[]= {19,4,18,7,24,29,2,6,16};
          int max=arr[0];
          
          for(int i=0;i<arr.length;i++) {

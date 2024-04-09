@@ -24,6 +24,7 @@ public class FindSecondElement {
 		System.out.println(arr[ele-1]);
 
 
+		sc.close();
 		
 	}
 
